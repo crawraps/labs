@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Лабораторная работа №1</title>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script>
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [
+            ['$', '$'],
+            ['\\(', '\\)'],
+          ],
+        },
+      })
+    </script>
+  </head>
+  <body>
+    <header>
+      <h3>lab-1</h3>
+      <a href="./index.html">case - 1</a>
+      <a href="./case-2.html">case - 2</a>
+      <a href="./case-3.html">case - 3</a>
+    </header>
+
+    <div class="content">
+      <h1>Text</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit voluptatem voluptate
+        commodi reprehenderit illum tempore ipsum iusto dignissimos eum praesentium maiores veniam
+        sequi sunt illo, nam amet rem porro!
+      </p>
+      <h1>Code</h1>
+      <p>Let's have some ts code example</p>
+      <code>
+        <pre>
+let a: number = 42
+
+for (let i = 0; i < 10; i++ ){
+  let b = a++;
+}
+
+console.log(a) // 52
+console.log(b) // undefined
+        </pre>
+      </code>
+
+      <h1>More diverse text</h1>
+      <p>
+        Lorem ipsum dolor sit <i>amet</i> consectetur, <sub>adipisicing</sub> elit. Neque ullam
+        dolor pariatur voluptates a et iure sit nisi quod consequatur <b>laboriosam</b> maxime
+        maiores voluptatum ut dolorem <i>necessitatibus</i>, fugiat non error?
+        <br />
+        <br />
+        Lorem ipsum dolor sit amet, consectetur <strong>adipisicing</strong> elit. Porro,
+        <i>voluptatibus</i> nihil! Sed expedita <i>voluptatibus</i> odio, eaque voluptas doloremque
+        a <b>atque</b>, odit quas dolorem nesciunt deleniti aliquid <sup>quisquam</sup> enim?
+        Minima, adipisci.
+      </p>
+      <br />
+      <span>And formula</span>
+      <span>$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$</span>
+    </div>
+  </body>
+</html>
