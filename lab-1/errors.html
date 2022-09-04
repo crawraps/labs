@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Лабораторная работа №1</title>
+  </head>
+  <body>
+    <header>
+      <h3>lab-1</h3>
+      <a href="./index.html">case - 1</a>
+      <a href="./case-2.html">case - 2</a>
+      <a href="./case-3.html">case - 3</a>
+      <a href="./errors.html">errors</a>
+    </header>
+
+    <div class="content">
+      <h1>Errors</h1>
+      <table class="errors">
+        <tr>
+          <td>Error</td>
+          <td>before</td>
+          <td>after</td>
+        </tr>
+        <tr>
+          <td>Bad character after <. Probable cause: Unescaped <. Try escaping it as &lt;.</td>
+          <td><pre>for (let i = 0; i < 10; i++ ){</pre></td>
+          <td><pre>for (let i = 0; i &lt; 10; i++ ){</pre></td>
+        </tr>
+        <tr>
+          <td>
+            Element pre not allowed as child of element code in this context. (Suppressing further
+            errors from this subtree.)
+          </td>
+          <td><pre>&lt;code>&lt;pre>↩let a...</pre></td>
+          <td><pre>&lt;pre>↩let a...</pre></td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

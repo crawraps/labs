@@ -117,3 +117,10 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+.errors td {
+  width: fit-content;
+}
+.errors td:first-child {
+  width: 600px;
+}
