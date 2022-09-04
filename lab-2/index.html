@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>ICS6 Bootstrap</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <style>
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+      body {
+        margin-bottom: 40px;
+      }
+      main {
+        margin-top: 15px;
+      }
+      footer {
+        height: 40px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+      .my-primary {
+        background-color: pink;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark my-primary">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            59
+            <a class="nav-link" href="#">Link</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="row">
+        <div class="col-4">
+          <img
+            src=" http://e-learning.bmstu.ru/moodle/pluginfile.php/7546/mod_folder/content/0/avatar.jpg"
+            alt="avatar"
+            width="150"
+            height="150"
+          />
+        </div>
+        <div class="col-8">
+          <p>Любой текст</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <form>
+            <table>
+              <tr>
+                <td colspan="2">Registration form</td>
+              </tr>
+              <tr>
+                <td>Phone:</td>
+                <td><input type="number" placeholder="+79875641234" /></td>
+              </tr>
+              <tr>
+                <td>Email:</td>
+                <td><input type="email" placeholder="ex@example.com" /></td>
+              </tr>
+              <tr>
+                <td>Password:</td>
+                <td><input type="password" placeholder="mysecretpassword" /></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button>Confirm</button>
+                </td>
+              </tr>
+            </table>
+          </form>
+        </div>
+        <div class="col-8">
+          <table>
+            <tr>
+              <td class="text-primary">Время</td>
+              <td class="text-primary">Числитель</td>
+              <td class="text-primary">Знаменатель</td>
+            </tr>
+            <tr>
+              <td>08:30 - 10:05</td>
+              <td colspan="2" class="text-secondary">
+                (сем) Теория вероятностей и математическая статистика 1035л
+              </td>
+            </tr>
+            <tr>
+              <td>10:15 - 11:50</td>
+              <td class="text-secondary">
+                (лек) Теория вероятностей и математическая статистика 744л Горяинов В. Б.
+              </td>
+              <td class="text-secondary">(лек) Правоведение 744л</td>
+            </tr>
+            <tr>
+              <td>12:00 - 13:35</td>
+              <td class="text-secondary">(лаб) Электротехника каф. ИУ6</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td>13:50 - 15:25</td>
+              <td class="text-secondary">(лаб) Электротехника каф. ИУ6</td>
+              <td>&nbsp;</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <p class="text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, vero eos quibusdam
+            explicabo quos et nihil debitis. <i>Dolore</i> eos
+            <span style="background-color: red">reprehenderit</span> animi ipsam eaque quidem vitae
+            odit placeat? Error, labore vitae! Lorem ipsum dolor sit amet,
+            <span style="color: blue">consectetur</span> adipisicing elit. Culpa exercitationem
+            minus quae quis earum blanditiis quod tempore consequuntur possimus iusto ex maxime
+            explicabo, nisi laudantium? Similique veritatis porro nobis error! Lorem ipsum dolor sit
+            <b>amet</b> consectetur adipisicing elit. Odio tempore est nostrum delectus
+            <strong>porro</strong>, laboriosam ullam, perspiciatis eum
+            <span style="border: 2px solid darkblue">debitis</span> possimus deleniti aspernatur, id
+            illo. Debitis, corrupti! Voluptatem amet expedita doloremque.
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col div-table">
+          <h3>Div table</h3>
+          <div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="my-primary">
+      <div class="container">
+        <p class="footer-text">Footer</p>
+      </div>
+    </footer>
+  </body>
+</html>

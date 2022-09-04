@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+}
+
+table {
+  margin: 1em auto;
+  border-collapse: collapse;
+}
+
+tr,
+td {
+  border: 1px solid darkslategray;
+}
+table td:first-child {
+  width: 150px;
+}
+table td {
+  text-align: center;
+  width: 600px;
+  padding: 0.2em 0.6em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form tr,
+form td {
+  border: none;
+  width: fit-content;
+  padding: 0.4em 0.4em;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid darkslategray;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid darkslategray;
+  padding: 0.3em 1em;
+  transition: 0.1s ease-in;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkslategray;
+  color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.errors td {
+  width: fit-content;
+}
+.errors td:first-child {
+  width: 600px;
+}
+
+.text {
+  margin: 0 auto;
+  margin-top: 3em;
+}
+
+.div-table {
+  margin: 1em auto;
+  margin-bottom: 4em;
+}
+
+.div-table div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.div-table div > div {
+  width: 30%;
+  aspect-ratio: 4 / 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  margin: 0.4em 0;
+}
