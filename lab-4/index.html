@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Shopping cart</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div id="page_add">Add</div>
+        <div id="page_cart">Cart</div>
+      </nav>
+    </header>
+    <main id="content">
+      <form></form>
+    </main>
+
+    <template id="form">
+      <h1>Form page</h1>
+      <form>
+        <div>
+          <label for="name">Product name</label>
+          <input id="name" name="productName" type="text" placeholder="Tiny shark" />
+        </div>
+        <div>
+          <label for="cost">Product cost</label>
+          <input id="cost" name="cost" type="number" placeholder="213" />
+        </div>
+
+        <button id="addButton">Add</button>
+      </form>
+    </template>
+
+    <template id="cart">
+      <h1>Cart page</h1>
+      <div class="cart">
+        <div>
+          <h2>Goods</h2>
+          <table class="goods">
+            <tr>
+              <td>id</td>
+              <td>name</td>
+              <td class="cost-heading">cost</td>
+            </tr>
+          </table>
+        </div>
+        <div>
+          <h2>Cart</h2>
+          <table class="chosen">
+            <tr>
+              <td></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </template>
+  </body>
+</html>
