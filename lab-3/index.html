@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>lab-3</title>
+
+    <script>
+      const walk = (node, func) => {
+        let children = node.children
+        for (let i = 0; i < children.length; i++) walk(children[i], func)
+        func(node.className)
+      }
+
+      window.onload = () => {
+        const body = document.querySelector('body')
+        const code = document.createElement('pre')
+        code.innerText = body.innerHTML
+        body.appendChild(code)
+
+        walk(body, console.log)
+      }
+    </script>
+  </head>
+  <body class="body">
+    <div class="top">
+      Top node
+      <div class="middle-1">Middle node</div>
+      <div class="middle-2">
+        Middle node
+        <div class="bottom">Bottom node</div>
+      </div>
+      <div class="middle-3">Middle node</div>
+    </div>
+  </body>
+</html>
