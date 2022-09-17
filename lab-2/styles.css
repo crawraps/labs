@@ -94,3 +94,28 @@ input[type='number'] {
   background-color: pink;
   margin: 0.4em 0;
 }
+
+.table {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 60%;
+}
+
+.table > div {
+  width: 100%;
+  display: flex;
+}
+
+.table > div > div {
+  padding-left: 2em;
+  text-align: left;
+}
+
+.table > div:first-child > div {
+  margin-left: 1.2em;
+}
+
+.table > div:first-child > div:last-child {
+  margin-left: 28em;
+}
