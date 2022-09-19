@@ -1,0 +1,13 @@
+begin
+  require 'rspec/core/rake_task'
+
+  RSpec::Core::RakeTask.new(:spec)
+
+  task test: :spec
+rescue LoadError
+  task :default %w[main]
+
+  task main do
+    ruby './src/main.rb'
+  end
+end
