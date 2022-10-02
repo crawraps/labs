@@ -1,4 +1,4 @@
-require_relative '../src/main'
+require_relative '../part-1/main'
 
 class Functions_test
   include Functions
